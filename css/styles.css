@@ -12,6 +12,10 @@
     --contact-text-color: rgba(255, 255, 255, 0.6);
     --button-background-color: #188CE8;
     --fill-color: #AFB1B8;
+    --hero-background-color: #C4C4C4;
+    --img-description-background-color: rgba(47, 48, 58, 0.8);
+    --modal-background-color: rgba(0, 0, 0, 0.2);
+    --textarea-placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
 
@@ -47,6 +51,9 @@ img {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 ul,
 p {
     margin: 0;
@@ -73,31 +80,41 @@ p {
     border-bottom: 1px solid #ECECEC;
 }
 
+.logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--alternative-text-color);
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
 
-.logo-studio {
+
+.logo__text {
     color: var(--secondary-text-color);
 }
 
 
-.head-nav {
+.head__container {
     display: flex;
     align-items: center;
     max-height: 80px;
 }
 
 
-.nav-link,
-.nav-contact {
+.nav__list,
+.contact-list {
     display: flex;
+    gap: 50px;
 }
 
 
-.nav-link {
-    margin-left: 93px;
+.nav {
+    padding-left: 93px;
 }
 
 
-.nav-contact .item + .item {
+/* .contact-list .item + .item {
     margin-left: 50px;
 }
 
@@ -105,9 +122,9 @@ p {
 .nav-link .item + .item {
     margin-left: 50px;
 }
+ */
 
-
-.nav-contact {
+.contact-list {
     margin-left: auto;
 }
 
@@ -151,13 +168,13 @@ p {
 }
 
 
-.current-page {
+.nav__link--current-page {
     position: relative;
     color: var(--alternative-text-color);
     height: 100%;
 }
 
-.current-page::after {
+.nav__link--current-page::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -416,6 +433,7 @@ p {
     height: 100%;
     color: var(--fill-color);
     border-radius: 50%;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,13 +498,7 @@ p {
 
 
 
-.logo {         
-    font-family: "Raleway", sans-serif;
-    color: var(--alternative-text-color);
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
+
 
 .footer {
     background-color: var(--footer-background-color);
