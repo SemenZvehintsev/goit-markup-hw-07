@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: $color-text-gray;
+    font-family: "Roboto", sans-serif;
+    background-color: $color-white;
+}
+
+
+.head {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+
+.head__container {
+    display: flex;
+    align-items: center;
+    max-height: 80px;
+}
+
+    
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
